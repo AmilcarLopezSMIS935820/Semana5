@@ -1,12 +1,26 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <navegacion/>
+    <!--div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
+      <menu/>
     </div>
-    <router-view/>
+    <router-view/-->
+ 
   </div>
 </template>
+
+<script>
+import navegacion from './components/Navegacion.vue'
+import inicio from './components/inicio.vue'
+export default {
+  components:{
+    navegacion,
+    inicio
+  }
+}
+</script>
 
 <style>
 #app {
